@@ -26,7 +26,7 @@ function init(imageViewSel, listContainerSel) {
     // skip default event flow
     e.preventDefault();
     // change src and alternative (hint title)
-    imageView.src = link.getAttribute('href') || '#';
+    imageView.src = link.href || '#';
     imageView.alt = link.title || '';
   });
 }
